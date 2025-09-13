@@ -28,9 +28,13 @@
       // add code here
 
       function addItem(){ 
-         const newItemVal = document.getElementById("InputText").value ; 
-         const ulElem = document.getElementsByTagName("ul")[0].value ; 
-         const liElem = document.getElementByTagName("li")[0].value ; 
+         // get the user input 
+         const newItemVal = document.getElementById("inputText").value; 
+         // identify the ul element 
+         const ulElem = document.getElementsByTagName("ul")[0]; 
+         // create the li element to put the input into the li element 
+         const liElem = document.createElement("li") ; 
+         // so put the new item as the li element 
          liElem.innerText = newItemVal ; 
          ulElem.appendChild(liElem) ; 
       } 
